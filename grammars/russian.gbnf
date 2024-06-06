@@ -1,0 +1,7 @@
+# A probably incorrect grammar for Russian
+root        ::= cy-char+ ([ \t\n] cy-char+)*
+cy-char     ::= letters | numbers | punctuation
+letters     ::= [а-я] | [А-Я]
+numbers     ::= [0-9]
+punctuation ::= [.,-:;!?(){}*] | "[" | "]"
+
